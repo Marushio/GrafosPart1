@@ -136,6 +136,26 @@ public class Grafos {
                   }
                   System.out.println();
         }
+        public boolean verAdjasenciaL(int vertice1,int vertice2) {
+              
+            for(int i=0;i<L[vertice1].size();i++){
+                
+                if((int)L[vertice1].get(i)==vertice2){
+                    System.out.println("teste :"+L[vertice1].get(vertice2));
+                    return true;
+                }
+            }
+            return false;
+        }
+        public boolean verAdjasenciaM(int vertice1,int vertice2) {
+             
+            if(M[vertice1][vertice2] == 1){
+                    
+                    return true;
+            }
+            
+            return false;
+        }
         public void imprimeVerticeM(int verticePesquisa) {  
             System.out.println("Matriz: ");
             System.out.print(verticePesquisa+"|");
