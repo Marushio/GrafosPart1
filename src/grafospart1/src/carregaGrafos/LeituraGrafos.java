@@ -81,8 +81,9 @@ public class LeituraGrafos {
 			
 			System.out.println();
 			for (int i = 1; i <= n; i++) {
-                                if(!L[i].isEmpty()){
-                                    for (int j = 1; j < L[i].size(); j++) {
+                                if(L[i]!=null){
+                                    System.out.print(" | "+i+" | ");
+                                    for (int j = 0; j < L[i].size(); j++) {
                                     	System.out.print("=>"+L[i].get(j).toString()+" ");
                                     }
                                     System.out.println();
